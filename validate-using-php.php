@@ -11,7 +11,7 @@ $P = $_POST['Diplalemail'];
 
 
     $namepattern ="/^[a-zA-Z]+[ ]+[a-zA-Z]$/";
-    if(preg_match($D,$namepattern))
+    if(preg_match($D, $namepattern))
     {
      echo("Valid Name");
     }

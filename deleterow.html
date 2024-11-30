@@ -4,11 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delete-row</title>
+    <style>
+        .deletebox{
+            margin:auto;
+            margin-top:10pc;
+            margin-left:10pc;
+            background-color:red;
+            margin-right:10pc;
+            color:white;
+            font-size:30px;
+            padding-top:3pc;
+            border-radius:15px;
+
+        }
+      p{
+        margin:auto;
+        align-items:center;
+        margin-left:35pc;
+
+      }  
+      #row{
+       height :2pc;
+        width:25pc;
+        display:block;
+        border-radius:20px;
+        padding-left:1pc;
+        font-size:20px;
+        margin-left:28pc;
+        margin-top:2.5pc;
+
+      }
+
+      button{
+        margin-left:38pc;
+        background-color: rgb(18, 198, 18);
+        height:2pc;
+        width:5pc;
+        color:white;
+        border-radius:10px;
+        border:none;
+        margin-top:3pc;
+        margin-bottom:2pc;
+
+      }
+
+    </style>
 </head>
 <body>
+    <div class="container">
+    <div class="deletebox">
     <form action="deleterow.php" method="post">
-    <p>DELETE ROW:</p> <input type="number" name="ROW" id="row"/>
+    <p>DELETE ROW</p> <input type="number" placeholder="Enter the row you want to DELETE." name="ROW" id="row"/>
     <button>Submit</button>
+</div>
+</div>
 </form>
 </body>
 </html>

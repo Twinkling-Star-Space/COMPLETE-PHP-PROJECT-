@@ -1,8 +1,13 @@
 <?php
+include 'connectserver.html';
 
+
+if($_SERVER["REQUEST_METHOD"]== "POST")
+{
 $D = $_POST['Diplalname'];
 $I = $_POST['Diplaladdress'];
 $P = $_POST['Diplalemail'];
+
 
 
     $namepattern ="/^[a-zA-Z]+[ ]+[a-zA-Z]$/";
@@ -22,5 +27,5 @@ $P = $_POST['Diplalemail'];
     {
         echo("Valid Email");
     }
-
-    ?>
+}
+?>

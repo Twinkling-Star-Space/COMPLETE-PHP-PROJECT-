@@ -1,7 +1,7 @@
 
 <?php
 
-include 'Connectserver.php';
+include 'Connectserver.php'; 
 
 if($conn->connect_error)
 {

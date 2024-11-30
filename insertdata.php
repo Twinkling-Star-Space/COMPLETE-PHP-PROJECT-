@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
     // Validate and sanitize data (optional but recommended)
     $name = htmlspecialchars(strip_tags($name));
     $email = htmlspecialchars(strip_tags($email));
-    $address= (int)$address;
+    $address= htmlspecialchars(strip_tags($address));
     $id = (int)$id;
     $gender = htmlspecialchars(strip_tags($gender));
 

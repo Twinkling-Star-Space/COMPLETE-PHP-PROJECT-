@@ -70,6 +70,7 @@
             width: 35%;
             margin-left: 33pc;
             border-radius: 3pc;
+            margin-bottom: 2pc;
 
         }
 
@@ -105,8 +106,9 @@
             margin-left: 3.3pc;
         }
 
-        #gender {
-            margin-left: 2.3pc;
+        #gn{
+            font-size:15px;
+            margin-left:1pc;
         }
     </style>
 </head>
@@ -134,22 +136,30 @@
                 <p>Email: </p><input class="box" id="email" type="email" placeholder="Enter your email"
                     name="Diplalemail" value="" />
                 <br><br>
-
+                <div>
                 <p>Gender:</p>
-                <p>MALE</p><input type="radio" name="gender" class="box" id="Diplalgender" value="Male" />
-                <p>FEMALE</p> <input type="radio" name="gender" class="box" id="Diplalgender" value="Female" />
-                <p>OTHERS</p><input type="radio" name="gender" class="box" id="Diplalgender" value="Others" />
+                <p id="gn">MALE</p><input type="radio" name="Diplalgender"  value="Male" />
+                <p id="gn">FEMALE</p> <input type="radio" name="Diplalgender"  value="Female" />
+                <p id="gn">OTHERS</p><input type="radio" name="Diplalgender" value="Others" /> 
+                
                 <br><br>
+               </div>
                 <hr>
 
-
-                <button>CREATE DATABASE</button>
+                 <button>CREATE DATABASE</button>
                 <button>CREATE TABLE</button>
+
                 <a href="fetchdata.php"> <button>RETRIEVE</button></a>
+
                 <button>EDIT/update</button>
-                <a href="deleterow.html"><button>DELETE DATA</button></a>
+
+                <button >DELETE DATA</button>
 
                 <a href="submit.html"><button id="submit">Submit</button></a>
+                
+                <button onclick="validate()">Validate(js)</button>
+                <button >Validate(php)</button>
+
             </form>
         </div>
     </div>
